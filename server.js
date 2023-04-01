@@ -31,10 +31,6 @@ app.use(cors({
   origin: 'http://localhost:3000',
 }));
 
-app.get('/', (req, res) => {
-  res.send('ok');
-});
-
 /** Get possible user from DB and verify new user */
 app.get('/user', (req, res) => {
   if (!req.cookies.token) {
