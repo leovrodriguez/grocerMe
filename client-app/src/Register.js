@@ -20,7 +20,7 @@ function Register() {
     const data = {name,email,password};
     console.log("data:");
     console.log(data);
-    axios.post("http://localhost:4000/register", data, {withCredentials:true})
+    axios.post("/register", data, {withCredentials:true})
       .then(response => {
         user.setName(response.data.name);
         user.setEmail(response.data.email);
