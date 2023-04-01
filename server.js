@@ -48,12 +48,9 @@ app.get('/user', (req, res) => {
 
 /** Register a new user in DB */
 app.post('/register', (req, res) => {
-  console.log("req is");
-  console.log(req);
   const {name, email,password} = req.body;
   const hashedPassword = bcrypt.hashSync(password, 10);
   const user = new User({name:name,password:hashedPassword,email});
-  console.log(user);
   User.findOne({email}).then(userInfo => {
     if (userInfo) {
       res.sendStatus(401);

@@ -4,13 +4,13 @@
 
 # 1 - Instructions
 ## 1.1. - Overview
-  Welcome [GROCERYAPPNAME], the grocery tracker . This user manual has sections for setting up and using your account, troubleshooting, and information about the GitHub repository for this product. [GROCERYAPPNAME] capabilities include the ability to add and delete items, assign items a due/expiration date, and label items to buy under an food category. In order to save your data and keep your list private, you will need to register with an account and log in to the application. 
+  Welcome to GrocerMe, the grocery tracker . This user manual has sections for setting up and using your account, troubleshooting, and information about the GitHub repository for this product. GrocerMe's capabilities include the ability to add and delete items, assign items a due/expiration date, and label items to buy under an food category. In order to save your data and keep your list private, you will need to register with an account and log in to the application. 
 
 ## 1.2. - Accessing the Application
-  To access the application, use the link [NEWLINK] in your web browser. After a few seconds, the [APPNAME] be ready for use.
+  To access the application, use the link https://grocer-me.herokuapp.com in your web browser. After a few seconds, GrocerMe should be ready for use.
 
 ## 1.3. - Creating an Account
-  Before being able to utilize our tracking functionality, you will need to register for an account on [APPNAME]. When opening [APPNAME], for the first time, you will see that the info about [APPNAME], and be prompted to login or register.To register, navigate to the Register page using the buttons located at the top left hand sideof the page. In the respective fields, enter an email you would like the account to be linked to and create a password for your account. Once typed in, hit the blue Register button at the bottom of the page to register your account.
+  Before being able to utilize our tracking functionality, you will need to register for an account on GrocerMe. When opening GrocerMe, for the first time, you will see that the info about GrocerMe, and be prompted to login or register. To register, navigate to the Register page hitting the blue link or using the buttons located at the top left hand sideof the page. In the respective fields, enter an email you would like the account to be linked to and create a password for your account. Once typed in, hit the blue Register button at the bottom of the page to register your account.
   
 ## 1.5. - Logging In
   To log in with you account information, navigate to the Login page using the buttons at the top left of the page. Enter the email you used to register and the password you created for your account in the respective boxes, and click the blue Log In button at the bottom of the page. After clicking the Log In Button, the application will automatically bring you to the Home page where you can now keep track of your groceries.
@@ -34,4 +34,4 @@
 
 # 3 - Repository
 ## 3.1. Navigation
-  To access the repository, use the following link: [GITHUBREPO]. To view the user manual/README file in a separate window, click on README.md in the repository. There are two main folders in our repository: api and client-app. As inferenced by their names. api contains all neccessary API, code, schema, and database information to create the application interface and base while client-app is where the styling and app functionality can be found. Within client-app, there are two folders. The first one, public, is imported files from the initial setup of the React app, and the second one, src, is where a majority of the product's code is found. 
+  To access the repository, use the following link: https://github.com/leovrodriguez/grocerMe . To view the user manual/README file in a separate window, click on README.md in the repository. There are two main sections in our repository: The server api and client-app. Everything to do with the server is in the root directory and everything to do with client side is in the client-app. The server section contains all neccessary API, code, schema, and database information to create the application interface and base while client-app is where the styling and client side app functionality can be found. Within client-app, there are three folders. The first one, public, is imported files from the initial setup of the React app, the second one, src, is where a majority of the product's code is found, and the third one build where out production code is built for our static client facing site. 

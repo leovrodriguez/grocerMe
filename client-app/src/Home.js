@@ -37,7 +37,7 @@ function Home() {
   {/** If user is not logged in tell them about the website */ }
   if (!userInfo.email) {
     return <div>
-      <h2 className="whiteText"> GroceryMe <FontAwesomeIcon className="text-success" icon="fa-shopping-cart" /></h2>
+      <h2 className="whiteText"> GrocerMe <FontAwesomeIcon className="text-success" icon="fa-shopping-cart" /></h2>
       <h3 className="whiteText"> Welcome! The purpose of GrocerMe is to help the community to keep track of their groceries and expiration dates with the goal of reducing food waste</h3>
       <h4 className="whiteText"> Please  <Link to={'/Login'}>login</Link> or <Link to={'/Register'}> register</Link> to use our service </h4>
     </div>
@@ -264,7 +264,9 @@ function Home() {
                     <div>
 
                       {/** Display the appropriate icon for the type of item */}
-                      {!todo.done && <span><FontAwesomeIcon icon="fa-solid fa-face-blank" /></span>}
+                      {!todo.done && <span><FontAwesomeIcon icon="fa-solid fa-face-meh-blank" style={{ paddingRight: "0.5em" }}/></span>}
+
+                      {todo.done && <span><FontAwesomeIcon className="text-success" icon="fa-solid fa-face-smile-wink" style={{ paddingRight: "0.5em" }} /></span>}
                      
                       <input type={'checkbox'}
                         checked={todo.done}

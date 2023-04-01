@@ -16,10 +16,7 @@ function Register() {
   /* Upon form submission attempt to register user with provided information */
   function registerUser(e) {
     e.preventDefault();
-
     const data = {name,email,password};
-    console.log("data:");
-    console.log(data);
     axios.post("/register", data, {withCredentials:true})
       .then(response => {
         user.setName(response.data.name);
