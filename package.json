@@ -1,7 +1,7 @@
 {
   "engines": {
-    "node": "16.18.0",
-    "npm":"8.19.2"
+    "node": ">=16.18.0",
+    "npm":">=8.19.2"
   },
   "scripts":{
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client-app && npm run build --prefix client-app"
