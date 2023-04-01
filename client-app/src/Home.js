@@ -25,7 +25,7 @@ function Home() {
 
   /* Load todos upon page open */
   useEffect(() => {
-    axios.get('http://localhost:4000/todos', { withCredentials: true })
+    axios.get('/todos', { withCredentials: true })
       .then(
         (response) => {
           setTodos(response.data);
@@ -51,7 +51,7 @@ function Home() {
     const nonFormatDated = inputDate;
     let formatedDate = moment(nonFormatDated, "YYYY-MM-DD");
     formatedDate = formatedDate.format("MM/DD/YYYY");
-    axios.put('http://localhost:4000/todos', { text: inputVal, dtime: formatedDate, eType: eventType, toUse: false }, { withCredentials: true })
+    axios.put('/todos', { text: inputVal, dtime: formatedDate, eType: eventType, toUse: false }, { withCredentials: true })
       .then(
         (response) => {
 
@@ -73,7 +73,7 @@ function Home() {
     const nonFormatDated = inputDate;
     let formatedDate = moment(nonFormatDated, "YYYY-MM-DD");
     formatedDate = formatedDate.format("MM/DD/YYYY");
-    axios.put('http://localhost:4000/todos', { text: inputVal, dtime: formatedDate, eType: eventType, toUse: true }, { withCredentials: true })
+    axios.put('/todos', { text: inputVal, dtime: formatedDate, eType: eventType, toUse: true }, { withCredentials: true })
       .then(
         (response) => {
          
@@ -92,7 +92,7 @@ function Home() {
   /** Handle the deleting of state changes and making the local changes reflective */
   function deleteTodo(todo) {
     const data = { id: todo._id, delete: true };
-    axios.post('http://localhost:4000/todos', data, { withCredentials: true })
+    axios.post('/todos', data, { withCredentials: true })
       .then(() => {
         const newTodos = todos.filter(t => {
           return t._id !== todo._id;
@@ -104,7 +104,7 @@ function Home() {
   /** Handle the updating of state changes and making the local changes reflective */
   function updateTodo(todo) {
     const data = { id: todo._id, done: !todo.done, delete: false };
-    axios.post('http://localhost:4000/todos', data, { withCredentials: true })
+    axios.post('/todos', data, { withCredentials: true })
       .then(() => {
         const newTodos = todos.map(t => {
           if (t._id === todo._id) {
