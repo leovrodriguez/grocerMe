@@ -28,7 +28,7 @@ function App() {
   }, []);
 
   function logout() {
-    axios.post('logout', {}, {withCredentials:true})
+    axios.post('/logout', {}, {withCredentials:true})
       .then(() => 
       {
         setEmail('');
