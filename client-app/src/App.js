@@ -20,7 +20,7 @@ function App() {
   const [name, setName] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:4000/user', {withCredentials:true})
+    axios.get('/user', {withCredentials:true})
       .then(response => {
         setEmail(response.data.email);
         setName(response.data.name);
@@ -28,7 +28,7 @@ function App() {
   }, []);
 
   function logout() {
-    axios.post('http://localhost:4000/logout', {}, {withCredentials:true})
+    axios.post('logout', {}, {withCredentials:true})
       .then(() => 
       {
         setEmail('');
