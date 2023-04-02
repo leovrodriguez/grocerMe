@@ -213,13 +213,13 @@ function Home() {
       <Modal.Body>
         <form>
           <input placeholder={'Describe your grocery item'}
-            className='form-control'
+            className= {errorInputVal ? "form-control is-invalid" : "form-control"}
             type='text'
             value={inputVal}
             onChange={e => setInputVal(e.target.value)}
           />
           <input placeholder={'Pick a date to buy it by'}
-            className='form-control'
+            className= {errorInputDate ? "form-control is-invalid" : "form-control"}
             type={calenderType}
             value={inputDate}
             onFocus={e => setCalenderType('date')}

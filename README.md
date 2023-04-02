@@ -1,6 +1,20 @@
-# GroceryTracker: 
+# GrocerMe: 
 ## User Manual
 #### Leonardo Rodriguez
+
+# 0 - What, Why, Who, How
+
+## 0.1. - What
+  GrocerMe is an application to help users track deadlines for the groceries items they need to purchase and track expiration dates for grocery items they need to eat
+
+## 0.2. - Why
+  Food waste happens often and in many different scenarios, but perhaps one of the worst ways is just by us not remembering about them. GrocerMe exist to help people keep better track of their items to reduce their food waste. 
+
+## 0.3. - Who
+  This app is for people who often forget about the food they purchase, whether it is just a busy schedule or the tendency to forget. This tends to include students who for many are not used to buying groceries and will forget to eat them or couples/small families that often overbuy or underbuy groceries.
+
+## 0.4. - How
+  This app includes two main lists that pertain to items to eat and items to buy. The list items contain the days left to do both. This gives people a relative time frame to when they should be eating/buying what groceries. The main technology this app uses is React JS, MongoDB, Express, and Node.js to implement this functionality. 
 
 # 1 - Instructions
 ## 1.1. - Overview
