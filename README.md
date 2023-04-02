@@ -44,7 +44,7 @@
   Because this application is hosted on a third party website, there may be a delay in terms of the application loading on the user's end. However, if the application does not load after a minute, close out of the application completely. Make sure to check that you have a stable internet connection and retry the link to the application. 
   
 ## 2.2. Task Not Being Added
-  If a task is not being added and you see error warnings appearing on your screen, this is because you did not fill out one of the neccessary fields required to add a task. Todo requires you to fill out all fields including Description, Date, and Time in order to add a task to your list.
+  If a task is not being added and you see error warnings appearing on your screen, this is because you did not fill out one of the neccessary fields required to add a task. Forms require you to fill out all fields including Description, Date, and Time in order to add a task to your list.
 
 # 3 - Repository
 ## 3.1. Navigation
