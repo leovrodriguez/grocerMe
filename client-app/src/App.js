@@ -10,9 +10,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'toastr/build/toastr.min.css';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faTrash, faArrowsUpDown, faListCheck, faCookie, faCookieBite , faCow ,faCarrot, faFish, faUtensils, faCartShopping, faFaceMeh, faFaceSmileWink} from '@fortawesome/free-solid-svg-icons';
+import { faTrash, faArrowsUpDown, faListCheck, faCookie, faCookieBite , faCow ,faCarrot, faFish, faUtensils, faCartShopping, faFaceMehBlank, faFaceSmileWink} from '@fortawesome/free-solid-svg-icons';
 
-library.add(faTrash, faArrowsUpDown, faListCheck, faCookie, faCookieBite, faCow, faCarrot, faFish, faUtensils, faCartShopping, faFaceMeh, faFaceSmileWink);
+library.add(faTrash, faArrowsUpDown, faListCheck, faCookie, faCookieBite, faCow, faCarrot, faFish, faUtensils, faCartShopping, faFaceMehBlank, faFaceSmileWink);
 
 
 function App() {
