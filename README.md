@@ -5,6 +5,8 @@
 ## Critique by Addy Krom in repo
 ## User Manual:
 ####  by Leonardo Rodriguez
+####  *Note for grader: Important files that contain logic are: server.js, models/todo.js, models/user.js , client-app/app.js, client-app/home.js , client-app/login.js, client-app/register.js. (The rest are supplementary to the main functionality of the app)*
+
 
 
 # 0 - What, Why, Who, How
