@@ -2,6 +2,7 @@
 ## App Link: https://grocer-me.herokuapp.com
 ## Walkthrough Link: https://youtu.be/6qXL3u2Wdds
 ## GitHub: https://github.com/leovrodriguez/grocerMe
+## Critique by Addy Krom in repo
 ## User Manual:
 ####  by Leonardo Rodriguez
 
