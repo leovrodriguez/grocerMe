@@ -37,11 +37,13 @@ function App() {
   } 
 
   return (
+    // Passes context about user to other components
     <UserContext.Provider value={{email,setEmail, name, setName}}>
       <BrowserRouter>
         <nav>
         <div className="btn-group" role="group" aria-label="Basic example">
         <Link className="btn btn-secondary" to="/Home">Home</Link>
+          {/* Based on login status, show different links in the nav bar */}
           {!email && (
             <>
               <Link className="btn btn-secondary" to={'/Login'}>Login</Link>

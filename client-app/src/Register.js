@@ -33,12 +33,14 @@ function Register() {
       });
   }
 
+  //If user has registered, redirect to home page now that they have credentials stored in the context
   if (navigate) {
     return <Navigate to={'/'} />
   }
 
   return (
     <form action="" onSubmit={e => registerUser(e)}>
+      {/* If there was an invalid registration attempt, display error message */}
       {registerError && (
         <div className="redText"> Email already registered. Please log in or use a new email</div>
       )}

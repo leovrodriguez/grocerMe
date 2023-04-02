@@ -12,6 +12,7 @@ function Login() {
 
   const user = useContext(UserContext);
 
+  /* Upon form submission attempt to log in user with provided information */
   function loginUser(e) {
     e.preventDefault();
 
@@ -30,12 +31,14 @@ function Login() {
       });
   }
 
+  //If user has logged in, redirect to home page now that they have credentials stored in the context
   if (navigate) {
     return <div>{<Navigate to={"/"}/>}</div>
   }
 
   return (
     <form action="" onSubmit={e => loginUser(e)}>
+      {/* If there was an invalid login attempt, display error message */}
       {loginError && (
         <div className="redText">Could not log in. Wrong email or password. Please try again or create an account.</div>
       )}
