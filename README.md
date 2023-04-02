@@ -1,6 +1,10 @@
 # GrocerMe: 
 ## User Manual
+## Walkthrough Link: https://youtu.be/LmsPwSdSSWU
+## GitHub: https://github.com/leovrodriguez/grocerMe
 #### Leonardo Rodriguez
+
+
 
 # 0 - What, Why, Who, How
 
