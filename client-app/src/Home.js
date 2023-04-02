@@ -260,7 +260,7 @@ function Home() {
             {todos.filter(todo => todo.toUse).map(todo => (
               <div key={todo._id} className="card" style={{ backgroundColor: "salmon !important" }}>
                 <div className="row align-items-center" style={{ justifyContent: "center !important" }}>
-                  <div className="col-sm-1">
+                  <div className="col-sm-2">
                     <div>
 
                       {/** Display the appropriate icon for the type of item */}
@@ -274,7 +274,7 @@ function Home() {
                       />
                     </div>
                   </div>
-                  <div className="col-sm-5 groceryContent" >
+                  <div className="col-sm-4 groceryContent" >
                     {todo.done ? <del>{todo.text}</del> : todo.text}
                   </div>
 
