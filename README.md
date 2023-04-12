@@ -6,6 +6,7 @@
 ## User Manual:
 ####  by Leonardo Rodriguez
 ####  *Note for grader: Important files that contain logic are: server.js, models/todo.js, models/user.js , client-app/app.js, client-app/home.js , client-app/login.js, client-app/register.js. (The rest are supplementary to the main functionality of the app)*
+<img width="1658" alt="image" src="https://user-images.githubusercontent.com/114703854/231610655-0668431e-edc4-4b9f-8c14-d7de35cebbd2.png">
 
 
 
